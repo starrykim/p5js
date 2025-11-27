@@ -2,15 +2,32 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>P5.js_비주얼포트폴리오 과제 모음</title>
+<title>P5.js_비주얼포트폴리오</title>
 
 <style>
+    .title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 15px;
+        color: #666;
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 2열 */
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
         width: 80%;
-        margin: 40px auto;
+        margin: 0 auto 40px;
     }
 
     .box {
@@ -22,41 +39,58 @@
     }
 
     .box img {
-        width: 100%;       /* 박스 크기에 맞게 자동 조정 */
-        height: auto;      /* GIF 품질 유지 */
+        width: 100%;
+        height: auto;
         border-radius: 8px;
     }
 
     .caption {
         margin-top: 10px;
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
+    }
+
+    .desc {
+        font-size: 14px;
+        color: #777;
+        margin-top: 4px;
     }
 </style>
 </head>
 
 <body>
 
+<h1 class="title">P5.js 비주얼 포트폴리오 과제 모음</h1>
+<p class="subtitle">전자정보공학부(전자공학전공) 20211473 김현진</p>
+
 <div class="grid-container">
 
+    <!-- 프로젝트 1 -->
     <div class="box">
         <img src="project1/sample1.png" alt="project1">
         <div class="caption">(과제 #1)</div>
+        <div class="desc">노들섬에서 본 한강철교</div>
     </div>
 
+    <!-- 프로젝트 4 -->
     <div class="box">
         <img src="project4/sample4.gif" alt="project4">
         <div class="caption">(과제 #4)</div>
+        <div class="desc">노을 지는 노들섬</div>
     </div>
 
+    <!-- 프로젝트 2 -->
     <div class="box">
         <img src="project2/sample2.png" alt="project2">
         <div class="caption">(과제 #2)</div>
+        <div class="desc">나의 캐리커쳐</div>
     </div>
 
+    <!-- 프로젝트 3 -->
     <div class="box">
         <img src="project3/sample3.gif" alt="project3">
         <div class="caption">(과제 #3)</div>
+        <div class="desc">움직이는 캐리커</div>
     </div>
 
 </div>

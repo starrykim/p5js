@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>p5.js 작품 모음</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>P5.js_비주얼포트폴리오 과제 모음</title>
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2열 */
+        gap: 20px;
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .box {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        background: #fafafa;
+    }
+
+    .box img {
+        width: 100%;       /* 박스 크기에 맞게 자동 조정 */
+        height: auto;      /* GIF 품질 유지 */
+        border-radius: 8px;
+    }
+
+    .caption {
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+</style>
 </head>
 
 <body>
-    <header>
-        <h1>나의 p5.js 작품</h1>
-        <p>아래 링크를 클릭하여 다양한 p5.js 프로그램을 감상하세요.</p>
-    </header>
 
-    <section id="projects">
+<div class="grid-container">
 
-        <div class="project">
-            <a href="project1/index.html">
-                프로젝트 1: 이 프로그램은 마우스를 따라 움직이는 원을 그립니다.
-            </a>
-        </div>
+    <div class="box">
+        <img src="project1/sample1.png" alt="project1">
+        <div class="caption">(과제 #1)</div>
+    </div>
 
-        <div class="project">
-            <a href="project2/index.html">
-                프로젝트 2: 이 프로그램은 다양한 색상으로 변화하는 배경을 만듭니다.
-            </a>
-        </div>
+    <div class="box">
+        <img src="project4/sample4.gif" alt="project4">
+        <div class="caption">(과제 #4)</div>
+    </div>
 
-        <div class="project">
-            <a href="project3/index.html">
-                프로젝트 3: 이 프로그램은 다양한 색상으로 변화하는 배경을 만듭니다.
-            </a>
-        </div>
+    <div class="box">
+        <img src="project2/sample2.png" alt="project2">
+        <div class="caption">(과제 #2)</div>
+    </div>
 
-        <div class="project">
-            <a href="project4/index.html">
-                프로젝트 4: 이 프로그램은 다양한 색상으로 변화하는 배경을 만듭니다.
-            </a>
-        </div>
+    <div class="box">
+        <img src="project3/sample3.gif" alt="project3">
+        <div class="caption">(과제 #3)</div>
+    </div>
 
-    </section>
+</div>
+
 </body>
 </html>
